@@ -112,8 +112,7 @@ flex-flow: column-reverse;
 justify-content: center;
 align-items: center;
 padding: 5px;
-height: 400px;
-margin-top: 100px;
+height:100vh;
 }
 #intro .info{
     text-align:center;
@@ -238,7 +237,7 @@ width: 100%;
 
 
 .information{
-
+ height: auto;
 width: 100%;
 padding: 5px;
 text-align: center ;
@@ -382,7 +381,7 @@ width: 34px;
     z-index: 1;
   }
 .Projects{
-
+ height: auto;
 padding: 10px;
 text-align: center;
 }
@@ -420,6 +419,9 @@ padding: 5px;
 text-align: left;
 
 }
+.prodetails{
+  display: none;
+}
 #btn3{
   background-color: blue;
   color:white;
@@ -433,7 +435,6 @@ text-align: left;
 #btn3:hover{
 color: white;
 background-color:transparent; 
-
 }
 .pop-box{
   position: absolute;
@@ -502,6 +503,13 @@ button[type=submit]{
   margin: 10px;
 
 }
+.myskills{
+  height:auto;
+}
+#s-info{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 .skillbox{
   background-color:transparent !important;  
   backdrop-filter:blur(1px) !important;
@@ -520,9 +528,15 @@ button[type=submit]{
   cursor: pointer;
  
 }
+.skills{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .skillinfo{
   display: flex;
   justify-content: space-between;
+
 }
 .skills .score{
   width: 100%;
@@ -688,7 +702,7 @@ align-items: center;
 justify-content: center; 
 padding: 5px;
 width: 100%;
-height: 580px; 
+height:100vh; 
 margin: 0; 
 
 }
@@ -734,7 +748,7 @@ margin: 0;
 }
 .information{
 
-height: 570px;
+height:100vh;
 align-items: center;
 
 }
@@ -751,7 +765,7 @@ align-items: center;
 text-align: center;
 }
 .Projects{
-  height: 650px;
+  height:100vh;
 }
 .Projects h2{
   margin-bottom: 0;
@@ -782,6 +796,7 @@ margin-top: 30px;
   font-style: normal;
 }
 .pr-para{
+
   padding: 10px;
   line-height: 30px;
   align-items: center;
@@ -796,9 +811,10 @@ margin-top: 30px;
 .skills{
    display: flex;
    flex-wrap: wrap;
+   flex-direction: row;
    justify-content: space-around;
    padding: 20px;
-   height: 540px;
+   height:100vh;
    width: 90%;
    margin-left: 5%;
   
@@ -813,7 +829,7 @@ margin-top: 30px;
 }
 #Contact-container{
   margin-top: 30px;
-  height: 400px;
+  height:400px;
 
 }
 .Contact-info{
@@ -830,7 +846,9 @@ margin-top: 30px;
 .links{
   justify-content: end;
 }
-
+.prodetails{
+  display: block;
+}
 .project-box::after{
   content:"";
   background-color:rgb(188, 25, 238);
