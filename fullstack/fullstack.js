@@ -1,5 +1,6 @@
 var data = {
   en: {
+    helo:"HELLO I Am",
     Name: "port",
     name2:"Folio",
     home: "Home",
@@ -24,6 +25,7 @@ var data = {
     disofproject2:"A platform for donors and recipients to connect, featuring blood type search, registration forms, and donor eligibility guidelines."
   },
   ja: {
+    helo:"こんにちは 私は",
     Name: "ポート",
     name2:"フォリオ",
     home: "家",
@@ -31,7 +33,7 @@ var data = {
     pro: "プロジェクト",
     ski:"スキル",
     con: "お問い合わせ",
-    fullname: "ハリ・チャラン",
+    fullname: "ハリ・チャランです。",
     btn1: "私を雇ってください",
     btn2: "再開する",
     ainfo:"について",
@@ -53,6 +55,7 @@ let lang = "en";
 
 function changelan() {
   const elementsMap = [
+    { key: "helo", selectors: ["#helo"] },
     { key: "about", selectors: [".about", "#a-small"] },
     { key: "home", selectors: [".home", "#h-small"] },
     { key: "pro", selectors: [".pro", "#p-small"] },
