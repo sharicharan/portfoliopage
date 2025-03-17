@@ -974,7 +974,7 @@ button[type="submit"] {
     background-size: 200% 200%; 
     animation: smoothChange 6s infinite linear;
     opacity: 0.8;
-  
+  }
   .box:hover{
      transform: translateY(-10px);
      cursor: pointer;
@@ -995,7 +995,7 @@ button[type="submit"] {
     height: 80vh;
     width: 60vh;
     padding: 20px;
-    background: linear-gradient(135deg, #5a189a, #3c096c) !important;
+    background: linear-gradient(135deg, #5a189a, #3c096c);
     border-radius: 20px;
     color: white;
   }
