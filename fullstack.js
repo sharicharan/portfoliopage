@@ -109,7 +109,12 @@ document.getElementById("menu-icon").addEventListener("click", () => {
 });
 
 document.querySelector("#btn2").addEventListener("click", () => {
-  alert("document not availble know! ");
+   const link = document.createElement('a');
+     link.href = 'Hari.pdf';
+     link.download = 'Hari.pdf';
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
 });
 document.querySelector(".close-btn").addEventListener("click", () => {
   document.querySelector(".pop-box").style.display = "none";
