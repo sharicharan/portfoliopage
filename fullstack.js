@@ -24,7 +24,33 @@ const data = {
     disofproject1: "Input total classes and attended classes, calculate attendance percentage, and display results.",
     disofproject2: "A platform for donors and recipients to connect, featuring blood type search, registration forms, and donor eligibility guidelines."
   },
-  ja: { /* Japanese translations */ }
+  ja: {helo: "こんにちは 私は",
+    Name: "ポート",
+    name2: "フォリオ",
+    home: "家",
+    about: "について",
+    pro: "プロジェクト",
+    ski: "スキル",
+    con: "お問い合わせ",
+    fullname: "ハリ・チャランです。",
+    btn1: "私を雇ってください",
+    btn2: "再開する",
+    ainfo: "について",
+    paragraph:
+      "こんにちは！私は Hari Charan です。コンピューター サイエンスとエンジニアリングに熱心に取り組んでいる学生で、現在は B.Tech を取得して 2027 年に卒業する予定です。学位で得た確固たる基礎と、Web 開発と Python プログラミングの専門知識を活かして、テクノロジーを活用して革新的なソリューションを生み出すことに尽力しています。",
+    Contactinfo: "連絡してください",
+    Mno: "携帯",
+    Mail: "郵便",
+    skill: "スキル",
+    project: "プロジェクト",
+    button: "チェック",
+    nameofproject1: "基本的な出席計算ウェブページ:",
+    nameofproject2: "献血ウェブページ:",
+    disofproject1:
+      "総クラス数と出席クラス数を入力し、出席率を計算し、結果を簡単なフォーマットで表示します。",
+    disofproject2:
+      "血液型の検索、登録フォーム、ドナー資格ガイドラインを備えた、ドナーと受信者をつなぐプラットフォームです。",
+  },
 };
 
 let lang = "en";
