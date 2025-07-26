@@ -1,3 +1,5 @@
+
+
 var data = {
   en: {
     helo: "HELLO I Am",
@@ -109,12 +111,12 @@ document.getElementById("menu-icon").addEventListener("click", () => {
 });
 
 document.querySelector("#btn2").addEventListener("click", () => {
-   const link = document.createElement('a');
-     link.href = 'Hari.pdf';
-     link.download = 'Hari.pdf';
-     document.body.appendChild(link);
-     link.click();
-     document.body.removeChild(link);
+  const link = document.createElement("a");
+  link.href = "Hari.pdf";
+  link.download = "Hari.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 });
 document.querySelector(".close-btn").addEventListener("click", () => {
   document.querySelector(".pop-box").style.display = "none";
@@ -210,26 +212,56 @@ function change_data(serv) {
       frontend: {
         title: "Front-End",
         skills: ["Html", "Css", "JavaScript", "Bootstrap", "React"],
+        poster: [
+          "devicon-html5-plain colored",
+          "devicon-css3-plain colored",
+          "devicon-javascript-plain colored",
+          "devicon-bootstrap-plain colored",
+          "devicon-react-original colored",
+        ],
       },
       backend: {
         title: "Back-End",
         skills: ["Python", "Flask", "Sql", "Rest API", "Java(intermidiate)"],
+        poster: [
+          "devicon-python-plain colored",
+          "devicon-flask-original colored",
+          "devicon-mysql-plain colored",
+          "devicon-linux-plain colored",
+          "devicon-java-plain colored",
+        ],
       },
       uiux: {
         title: "UI-UX",
         skills: ["Framer", "Figma", "others"],
+        poster: [
+          "devicon-javascript-plain colored",
+          "devicon-figma-plain colored",
+          "devicon-devicon-plain colored",
+        ],
       },
       tools: {
         title: "Tools",
         skills: ["git", "git hub", "vercal", "vite"],
+        poster: [
+          "devicon-git-plain colored",
+          "devicon-github-original colored",
+          "fas fa-rocket",
+          "devicon-vitejs-plain colored",
+        ],
       },
     };
     const cal = serv;
     service.innerHTML = data[cal].title;
     let ul = document.createElement("ul");
-    data[cal].skills.forEach((value) => {
+
+    data[cal].skills.forEach((value, index) => {
+      let icon = document.createElement("i");
+      icon.className = data[cal].poster[index];
       let li = document.createElement("li");
-      li.textContent = value;
+      icon.style.marginRight = "8px";
+      li.appendChild(icon);
+      li.appendChild(document.createTextNode(value));
       ul.appendChild(li);
     });
 
@@ -240,7 +272,21 @@ function change_data(serv) {
     container.classList.add("show");
   }, 500);
 }
+const skillstForDevice= ["html","css","js","python","java","react ","bootstrap","tailwindcss","flask"]
+skillstForDevice.forEach((ele,index)=>{
+  let diver = document.createElement("div");
+    let per = document.createElement("div");
+    let content = document.createElement('div');
+    content.className="title_names"
+    diver.className ="minibox";
+    per.id=`stack-${index}`;
+    per.className="stacks";
+    content.innerText=ele;
+    const direction = index % 2 === 0 ? "fade-right" : "fade-left";
+  diver.setAttribute("data-aos", direction);
+  diver.setAttribute("data-aos-delay", index * 100);
+  diver.appendChild(content);
+  diver.appendChild(per);
 
-
-
-
+  document.getElementById("skillboxs").appendChild(diver);
+})
