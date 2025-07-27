@@ -557,13 +557,108 @@ button[type="submit"] {
   width:100%;
   height: auto;
 }
-.certificates {
-  margin-top: 10px;
-}
+
 
 .certificates {
+  margin-top: 10px;
   padding: 10px;
   text-align: center;
+  overflow: hidden;
+}
+
+.firstrow {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+   box-shadow:10px 2px 20px #1d1a1a inset;
+   border-radius: 20px;
+
+}
+
+.scrolls {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  width: fit-content;
+  padding: 20px;
+   transition: 0.5s;
+  
+}
+.router{
+ position: absolute;
+ width: 100%;
+ bottom:0;
+ transform: translateY(100%);
+ left: 0;
+ background-color: rgba(9, 9, 10, 0.8);
+ text-align: left;
+ padding-left: 20px;
+ transition:all 0.5s;
+
+}
+.router h6{
+  color:white;
+}
+.router a{
+  text-decoration: none;
+
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-style: oblique;
+  margin-left: 20px;
+  transition:all 0.5s;
+}
+.router a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+.router i{
+  transition: 0.5s;
+}
+.router a:hover i{
+  color: yellow;
+}
+.router i{
+  color: blue;
+}
+.imgcontainer {
+  flex: 0 0 auto;
+  margin: 0 20px;
+   position: relative;
+   overflow: hidden;
+   transition: 0.5s;
+     border: 5px solid gold;
+     border-radius: 15px;
+}
+.imgcontainer:hover .router{
+  transform: translateY(-0%);
+  cursor: pointer;
+}
+
+.imgcontainer img {
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  
+}
+
+/* Keyframes for scrolling left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+   
+  }
+}
+
+
+@keyframes horscroll {
+  to{
+    transform: translateX(-100%);
+  }
 }
 .certificates h2 {
   border-bottom: 2px solid transparent;
@@ -574,9 +669,10 @@ button[type="submit"] {
 .certificates img {
   width: 320px;
   height: 210px;
-  border: 5px solid gold;
-  border-radius: 10px;
+
+
   transition: 0.5s;
+  
 }
 .certificates img:hover {
   transform: translateY(-5px) scale(1.02);
