@@ -1,5 +1,3 @@
-
-
 var data = {
   en: {
     helo: "HELLO I Am",
@@ -14,14 +12,23 @@ var data = {
     btn1: "Hire me",
     btn2: "Resume",
     ainfo: "About",
+    ser: "Myservices",
     paragraph:
       "Hello! I'm Hari Charan, a passionate Computer Science and Engineering student currently pursuing my B.Tech, set to graduate in 2027. With a solid foundation from my diploma and a growing expertise in web development and Python programming, I am committed to leveraging technology to create innovative solutions.",
     Contactinfo: "Contact me",
     Mno: "Mobile",
+    front: "Front end",
+    back: "Back end",
+    web:"Web Development",
+    fixbug:"Bug Fixing",
+    python:"Python Development",
+    ui: "uiux",
+    to: "tools",
     Mail: "Mail",
     skill: "Skills",
     project: "Projects",
     button: "Check",
+    cer: "Certificates",
     nameofproject1: "Basic Attendance Calculator Webpage:",
     nameofproject2: "Blood Donation Webpage:",
     disofproject1:
@@ -42,6 +49,15 @@ var data = {
     btn1: "私を雇ってください",
     btn2: "再開する",
     ainfo: "について",
+    ser: "私のサービス",
+    cer: "証明書",
+    front: "フロントエンド",
+    back: "バックエンド",
+    ui: "うい、う",
+    to: "ツール",
+     web:"ウェブ開発",
+    fixbug:"バグ修正",
+    python:"Python 開発",
     paragraph:
       "こんにちは！私は Hari Charan です。コンピューター サイエンスとエンジニアリングに熱心に取り組んでいる学生で、現在は B.Tech を取得して 2027 年に卒業する予定です。学位で得た確固たる基礎と、Web 開発と Python プログラミングの専門知識を活かして、テクノロジーを活用して革新的なソリューションを生み出すことに尽力しています。",
     Contactinfo: "連絡してください",
@@ -66,7 +82,7 @@ function changelan() {
     { key: "helo", selectors: ["#helo"] },
     { key: "about", selectors: [".about", "#a-small"] },
     { key: "home", selectors: [".home", "#h-small"] },
-    { key: "pro", selectors: [".pro", "#p-small"] },
+    { key: "pro", selectors: [".pro", "#p-small", ".pro-heading"] },
     { key: "con", selectors: [".con", "#c-small"] },
     { key: "fullname", selectors: ["#fullname"] },
     { key: "btn1", selectors: ["#btn1"] },
@@ -86,6 +102,15 @@ function changelan() {
     { key: "disofproject1", selectors: ["#disofpro1"] },
     { key: "disofproject2", selectors: ["#disofpro2"] },
     { key: "button", selectors: [".check1", ".check2"] },
+    { key: "ser", selectors: [".service-heading"] },
+    { key: "cer", selectors: [".cer-headings"] },
+    { key: "front", selectors: ["#front-heading"] },
+    { key: "back", selectors: ["#back-heading"] },
+    { key: "ui", selectors: ["#uiux-heading"] },
+    { key: "to", selectors: ["#tools-heading"] },
+    { key: "web", selectors: [".ser-web"] },
+    { key: "fixbug", selectors: [".ser-Bugfixing"] },
+    { key: "python", selectors: [".ser-python"] },
   ];
 
   const currentLangData = lang === "en" ? data.ja : data.en;
@@ -210,7 +235,7 @@ function change_data(serv) {
     root.innerHTML = "";
     const data = {
       frontend: {
-        title: "Front-End",
+        title: ["Front-End", "フロントエンド"],
         skills: ["Html", "Css", "JavaScript", "Bootstrap", "React"],
         poster: [
           "devicon-html5-plain colored",
@@ -221,7 +246,7 @@ function change_data(serv) {
         ],
       },
       backend: {
-        title: "Back-End",
+        title: ["Back-End", "バックエンド"],
         skills: ["Python", "Flask", "Sql", "Rest API", "Java(intermidiate)"],
         poster: [
           "devicon-python-plain colored",
@@ -232,7 +257,7 @@ function change_data(serv) {
         ],
       },
       uiux: {
-        title: "UI-UX",
+        title: ["UI-UX", "うい、う"],
         skills: ["Framer", "Figma", "others"],
         poster: [
           "devicon-javascript-plain colored",
@@ -241,7 +266,7 @@ function change_data(serv) {
         ],
       },
       tools: {
-        title: "Tools",
+        title: ["Tools", "ツール"],
         skills: ["git", "git hub", "vercal", "vite"],
         poster: [
           "devicon-git-plain colored",
@@ -252,7 +277,7 @@ function change_data(serv) {
       },
     };
     const cal = serv;
-    service.innerHTML = data[cal].title;
+    service.innerHTML = lang === "en" ? data[cal].title[0] : data[cal].title[1];
     let ul = document.createElement("ul");
 
     data[cal].skills.forEach((value, index) => {
@@ -272,21 +297,31 @@ function change_data(serv) {
     container.classList.add("show");
   }, 500);
 }
-const skillstForDevice= ["html","css","js","python","java","react ","bootstrap","tailwindcss","flask"]
-skillstForDevice.forEach((ele,index)=>{
+const skillstForDevice = [
+  "html",
+  "css",
+  "js",
+  "python",
+  "java",
+  "react ",
+  "bootstrap",
+  "tailwindcss",
+  "flask",
+];
+skillstForDevice.forEach((ele, index) => {
   let diver = document.createElement("div");
-    let per = document.createElement("div");
-    let content = document.createElement('div');
-    content.className="title_names"
-    diver.className ="minibox";
-    per.id=`stack-${index}`;
-    per.className="stacks";
-    content.innerText=ele;
-    const direction = index % 2 === 0 ? "fade-right" : "fade-left";
+  let per = document.createElement("div");
+  let content = document.createElement("div");
+  content.className = "title_names";
+  diver.className = "minibox";
+  per.id = `stack-${index}`;
+  per.className = "stacks";
+  content.innerText = ele;
+  const direction = index % 2 === 0 ? "fade-right" : "fade-left";
   diver.setAttribute("data-aos", direction);
   diver.setAttribute("data-aos-delay", index * 100);
   diver.appendChild(content);
   diver.appendChild(per);
 
   document.getElementById("skillboxs").appendChild(diver);
-})
+});

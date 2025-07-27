@@ -593,6 +593,7 @@ button[type="submit"] {
  text-align: left;
  padding-left: 20px;
  transition:all 0.5s;
+ z-index: 10;
 
 }
 .router h6{
@@ -600,7 +601,7 @@ button[type="submit"] {
 }
 .router a{
   text-decoration: none;
-
+  
   color: white;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -629,12 +630,24 @@ button[type="submit"] {
    transition: 0.5s;
      border: 5px solid gold;
      border-radius: 15px;
+    ;
 }
 .imgcontainer:hover .router{
   transform: translateY(-0%);
   cursor: pointer;
 }
-
+.imgcontainer:hover::after{
+  background-color: rgba(24, 24, 25, 0.5); 
+}
+.imgcontainer::after{
+  content: '';
+  position: absolute;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .imgcontainer img {
   height: 150px;
   width: auto;
@@ -944,6 +957,37 @@ button[type="submit"] {
   
   
 }
+  .tech-con{
+    border: 2px solid black;
+    padding:10px;
+       background-color: #322e2e;
+       width: 30%;
+       border-radius: 20px;
+       overflow-x: hidden;
+      white-space:nowrap;
+    
+  }
+  .scrool-left-ani{
+       animation: side-right 5s linear infinite;
+       width: max-content;
+      
+       
+  }
+  @keyframes side-right {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+    
+  }
+  .detail{
+    border:2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
 @media screen and (min-width: 600px) {
   .menu-icon {
     margin-right: 20px;
@@ -1156,14 +1200,54 @@ button[type="submit"] {
   .project-box:hover:after {
     width: 60%;
   }
-
+.project-box:hover .tech-con{
+  background-color: rgb(14, 14, 14);
+}
   .certificates {
     height: 100vh;
     align-content: center;
   }
+  .tech-con{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-top: none;
+  border-bottom: none;
+    padding:10px;
+       background-color:transparent;
+       width: 30%;
+       border-radius: 20px;
+       overflow-x: hidden;
+      white-space:nowrap;
+      transition:0.5s;
+      
+    
+    
+  }
+  .scrool-left-ani{
+       animation: side-right 5s linear infinite;
+       width: max-content;
+      
+       
+  }
+  @keyframes side-right {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+    
+  }
+  .detail{
+    border:2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
   .tech{
+
    
-    text-align: left;
+  text-align: left;
    padding-left: 12px;
   }
   .tech .tech-name{
