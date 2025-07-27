@@ -628,9 +628,9 @@ button[type="submit"] {
    position: relative;
    overflow: hidden;
    transition: 0.5s;
-     border: 5px solid gold;
+   
      border-radius: 15px;
-    ;
+    
 }
 .imgcontainer:hover .router{
   transform: translateY(-0%);
