@@ -270,10 +270,6 @@ video {
   padding: 5px;
   margin-top: 30px;
   text-align: center;
-  background-image: url(skills2.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position:center;
 }
 .Contact .Contact-info {
   border-bottom: 2px solid transparent;
@@ -1157,7 +1153,7 @@ button[type="submit"] {
     margin-top: 70px;
   }
   #Contact-container span {
-    font-style: italic;
+   text-transform: lowercase;
   }
   #change-name {
     display: inline-block;
