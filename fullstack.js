@@ -31,10 +31,15 @@ var data = {
     cer: "Certificates",
     nameofproject1: "Basic Attendance Calculator Webpage:",
     nameofproject2: "Blood Donation Webpage:",
+    nameofproject3:"Nihon Indo Foods",
+    nameofproject4:"ReelSpot",
     disofproject1:
       "Input total classes and attended classes, calculate attendance percentage, and display results with simple formatting.",
     disofproject2:
       "A platform for donors and recipients to connect, featuring blood type search, registration forms, and donor eligibility guidelines.",
+      disofproject3:"A restaurant food ordering website that enables customers to place orders online easily and conveniently, without the need to interact with staff",
+      disofproject4:"A responsive web page that showcases trending and top-rated movies by fetching data from an IMDb-compatible API. Features include search, ratings, posters, and pagination for smooth browsingbuild a webpage that shows trending and top rated movies, api initgrated (imdb)",
+      
   },
   ja: {
     helo: "こんにちは 私は",
@@ -68,10 +73,14 @@ var data = {
     button: "チェック",
     nameofproject1: "基本的な出席計算ウェブページ:",
     nameofproject2: "献血ウェブページ:",
+    nameofproject3:"日本インドフーズ",
+    nameofproject4:"リールスポット",
     disofproject1:
       "総クラス数と出席クラス数を入力し、出席率を計算し、結果を簡単なフォーマットで表示します。",
     disofproject2:
       "血液型の検索、登録フォーム、ドナー資格ガイドラインを備えた、ドナーと受信者をつなぐプラットフォームです。",
+    disofproject3:"スタッフとやり取りすることなく、顧客がオンラインで簡単かつ便利に注文できるレストランの食品注文ウェブサイト",
+    disofproject4:"IMDb互換APIからデータを取得し、人気映画や評価の高い映画を紹介するレスポンシブなウェブページです。検索、評価、ポスター、ページネーションなどの機能により、スムーズな閲覧が可能です。",
   },
 };
 
@@ -99,8 +108,12 @@ function changelan() {
     { key: "project", selectors: ["#pro-infos"] },
     { key: "nameofproject1", selectors: ["#nameofpro1"] },
     { key: "nameofproject2", selectors: ["#nameofpro2"] },
+      { key: "nameofproject3", selectors: ["#nameofpro3"] },
+    { key: "nameofproject4", selectors: ["#nameofpro4"] },
     { key: "disofproject1", selectors: ["#disofpro1"] },
     { key: "disofproject2", selectors: ["#disofpro2"] },
+        { key: "disofproject3", selectors: ["#disofpro3"] },
+    { key: "disofproject4", selectors: ["#disofpro4"] },
     { key: "button", selectors: [".check1", ".check2"] },
     { key: "ser", selectors: [".service-heading"] },
     { key: "cer", selectors: [".cer-headings"] },
@@ -334,3 +347,20 @@ skillstForDevice.forEach((ele, index) => {
 
   document.getElementById("skillboxs").appendChild(diver);
 });
+function expand(e){
+  if (e.innerText =="see more"){
+    let sibling = e.previousElementSibling;
+    
+   sibling.style.height = "auto";
+   e.innerText="see Less"
+  }
+   else{
+     let sibling = e.previousElementSibling;
+    
+   sibling.style.height = 85 +"px";
+   e.innerText="see more"
+  }
+  
+   
+
+}

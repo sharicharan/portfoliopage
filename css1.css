@@ -305,6 +305,7 @@ h2::first-letter {
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 50px;
+
 }
 
 #intro li {
@@ -320,6 +321,7 @@ h2::first-letter {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
   overflow: hidden;
+  color: white;
 }
 #intro i {
   width: 34px;
@@ -893,30 +895,42 @@ button[type="submit"] {
  
   color: black;
   padding: 10px;
+
 }
 .Projects strong{
   width: 100%;
   display: block;
   
 }
+.Projects p{
+  color: violet;
+  margin-left: 10px;
+}
 .prodetails{
-  padding: 1px;
-  text-align: justify; 
-  text-justify: inter-word;
-   line-height: 1.6;
+  margin-top: 4px;
+  padding: 5px;
+  
+   display: block;
+
+    padding: 10px;
+
+     height:85px;
+    overflow: scroll;
+    scrollbar-width: none;
 
 }
 .tech{
-  padding: 10px;
+  padding: 20px;
+  
 }
 .tech-name{
   color: black;
 }
 .project-box{
-  width: 60vw;
+  width: 80vw;
 
   border:4px solid rgb(212, 21, 229);
-  border-radius: 10px 30px;
+  border-radius: 10px 50px;
   background-color: white;
   text-align: left;
 
@@ -925,7 +939,9 @@ button[type="submit"] {
 
 .pro-info img{
  width: 100%;
- height: 200px;
+ height: 250px;
+ border-bottom: 4px solid violet;
+ margin-bottom: 10px;
 }
 .tech-con{
   width: 100%;
@@ -1082,6 +1098,9 @@ button[type="submit"] {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+  .expand{
+    display: none;
+  }
   .btn-3{
     padding: 3px;
     border-radius: 5px;
@@ -1132,6 +1151,8 @@ button[type="submit"] {
     padding: 10px;
     line-height: 30px;
     white-space: normal;
+    
+  
   }
 
   #Contact-container {
@@ -1155,14 +1176,15 @@ button[type="submit"] {
   .links {
     justify-content: end;
   }
+ 
   .prodetails {
     display: block;
 
     padding: 10px;
-    /* behaves like paragraph */
-    white-space: normal; /* allow wrapping */
-    overflow-wrap: break-word; /* wrap long words */
-    word-break: break-word;
+
+     height: 100px;
+    overflow: scroll;
+    scrollbar-width: none;
   }
   .project-box::after {
     content: "";
@@ -1203,8 +1225,8 @@ button[type="submit"] {
   }
   .tech-con {
     padding: 10px;
-    background-color: transparent;
-    width: 50%;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
     border-radius: 20px;
     overflow-x: hidden;
     white-space: nowrap;
@@ -1234,6 +1256,7 @@ button[type="submit"] {
   }
   .tech .tech-name {
     text-align: left;
+        color: white;
   }
   .tech i {
     color: red;
