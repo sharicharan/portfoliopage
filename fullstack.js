@@ -145,7 +145,8 @@ document.getElementById("load-small").addEventListener("click", changelan);
 
 document.getElementById("menu-icon").addEventListener("click", () => {
   const menu = document.getElementById("menu-small");
-  menu.style.display = menu.style.display === "none" ? "block" : "none";
+  menu.classList.toggle("show-style")
+ 
 });
 
 document.querySelector("#btn2").addEventListener("click", () => {
@@ -180,12 +181,7 @@ document.querySelector(".send-btn").addEventListener("click", (event) => {
 document.querySelector(".close-btn2").addEventListener("click", () => {
   document.querySelector(".popup").style.display = "none";
 });
-document.addEventListener("wheel", () => {
-  let a = document.getElementById("menu-small");
-  if (a.style.display == "block") {
-    a.style.display = "none";
-  }
-});
+
 document.getElementById("con").addEventListener("click", () => {
   let box = document.getElementById("Contact-box");
   if (box.style.display == "none") {
