@@ -1134,7 +1134,7 @@ button[type="submit"] {
     display: flex;
     width: 45%;
     height: 300px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     margin-top: 30px;
     overflow: hidden;
@@ -1165,7 +1165,7 @@ button[type="submit"] {
 
   .pr-para {
     padding: 10px;
-    line-height: 30px;
+    
     white-space: normal;
     
   
@@ -1198,7 +1198,7 @@ button[type="submit"] {
 
     padding: 10px;
 
-     height: 100px;
+     height: 110px;
     overflow: scroll;
     scrollbar-width: none;
   }
@@ -1251,6 +1251,13 @@ button[type="submit"] {
   .scrool-left-ani {
     animation: side-right 5s linear infinite;
     width: max-content;
+  }
+  .Projects img {
+    height: 200px;
+    border: none;
+  }
+  .Projects p{
+    display: none;
   }
   @keyframes side-right {
     0% {
