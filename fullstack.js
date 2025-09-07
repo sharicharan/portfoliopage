@@ -195,17 +195,26 @@ let elements = document.querySelectorAll(".percentage");
 elements.forEach((element, index) => {
   element.innerText = scores[index];
 });
-let names = ["programmer", "webdeveloper"];
-let i = 0;
-setInterval(() => {
+ let names = ["programmer", "webdeveloper"];
+  let i = 0;
   let changen = document.getElementById("change-name");
-  changen.innerHTML = names[i];
-  if (i < names.length - 1) {
-    i = i + 1;
-  } else {
-    i = 0;
+
+  function changeName() {
+    changen.style.opacity = 0;
+    setTimeout(() => {
+      changen.textContent = names[i];
+      changen.style.opacity = 1;
+      i = (i + 1) % names.length;
+    }, 1000);
   }
-}, 5000);
+
+  
+  changen.textContent = names[i];
+  i++;
+
+
+  setInterval(changeName, 5000);
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.5)";

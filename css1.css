@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+
   scroll-behavior: smooth;
 }
 
@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   scroll-behavior: smooth;
+  color: white;
 }
 
 #nav {
@@ -182,7 +183,6 @@ video {
 }
 #profile {
   text-align: center;
- 
 }
 #profile img {
   width: 200px;
@@ -305,7 +305,6 @@ h2::first-letter {
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 50px;
-
 }
 
 #intro li {
@@ -377,12 +376,12 @@ h2::first-letter {
   z-index: 1;
 }
 .Projects {
-
   padding: 10px;
   text-align: center;
   cursor: pointer;
 }
-.Projects h2 ,h2 {
+.Projects h2,
+h2 {
   text-align: center;
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, rgb(224, 8, 224) 50%, white) 1;
@@ -392,48 +391,7 @@ h2::first-letter {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.project-box {
-  
-  border: 3px solid white;
-width:50%;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  background-color: black;
-  z-index: 10;
-  transition: all 0.5s;
-}
 
-.pro-info {
-  text-align: left;
-}
-.Projects img {
-width: 100%;
-}
-.Projects #btn3 {
-  text-align: left;
-}
-.pr-para {
-  padding: 5px;
-  text-align: left;
-}
-.prodetails {
-  display: none;
-}
-#btn3 {
-  background-color: blue;
-  color: white;
-  border-radius: 3px;
-  border: none;
-  text-align: center;
-  padding: 5px;
-  margin: 10px;
-  transition: all 0.5s;
-}
-#btn3:hover {
-  color: white;
-  background-color: transparent;
-}
 .pop-box {
   position: absolute;
   top: 55%;
@@ -535,25 +493,16 @@ button[type="submit"] {
 }
 
 #change-name {
-  animation: name 5s infinite;
+ 
   color: violet;
-}
-@keyframes name {
-  0%,
-  90% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+   opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 .project-box {
-  width:100%;
+  width: 100%;
   height: auto;
 }
-
 
 .certificates {
   margin-top: 10px;
@@ -566,9 +515,9 @@ button[type="submit"] {
   width: 100%;
   overflow: hidden;
   position: relative;
-   box-shadow:10px 2px 20px #1d1a1a inset;
-   border-radius: 20px;
-
+  box-shadow: 10px 2px 20px #1d1a1a inset;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .scrolls {
@@ -576,67 +525,70 @@ button[type="submit"] {
   animation: scroll-left 30s linear infinite;
   width: fit-content;
   padding: 20px;
-   transition: 0.5s;
-  
+  transition: 0.5s;
 }
-.router{
- position: absolute;
- width: 100%;
- bottom:0;
- transform: translateY(100%);
- left: 0;
- background-color: rgba(9, 9, 10, 0.8);
- text-align: left;
- padding-left: 20px;
- transition:all 0.5s;
- z-index: 10;
-
+.scrolls:hover {
+  animation-play-state: paused;
 }
-.router h6{
-  color:white;
+.router {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(100%);
+  left: 0;
+  background-color: rgba(9, 9, 10, 0.8);
+  text-align: left;
+  padding-left: 20px;
+  transition: all 0.5s;
+  z-index: 10;
 }
-.router a{
+.router h6 {
+  color: white;
+}
+.router a {
   text-decoration: none;
-  
+
   color: white;
   text-transform: capitalize;
   letter-spacing: 1px;
   font-style: oblique;
   margin-left: 20px;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 .router a:hover {
   color: yellow;
   text-decoration: none;
 }
-.router i{
+.router i {
   transition: 0.5s;
 }
-.router a:hover i{
+.router a:hover i {
   color: yellow;
 }
-.router i{
+.router i {
   color: blue;
+}
+.imgcontainer:hover {
+  transform: scale(1.1);
 }
 .imgcontainer {
   flex: 0 0 auto;
   margin: 0 20px;
-   position: relative;
-   overflow: hidden;
-   transition: 0.5s;
-   
-     border-radius: 15px;
-    
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+
+  border-radius: 15px;
 }
-.imgcontainer:hover .router{
-  transform: translateY(-0%);
+.imgcontainer:hover .router {
+  transform: translateY(10%);
   cursor: pointer;
 }
-.imgcontainer:hover::after{
-  background-color: rgba(24, 24, 25, 0.5); 
+.imgcontainer:hover::after {
+  background-color: rgba(24, 24, 25, 0.5);
 }
-.imgcontainer::after{
-  content: '';
+.imgcontainer::after {
+  content: "";
   position: absolute;
   transition: 0.5s;
   width: 100%;
@@ -648,8 +600,7 @@ button[type="submit"] {
   height: 150px;
   width: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Keyframes for scrolling left */
@@ -659,13 +610,11 @@ button[type="submit"] {
   }
   100% {
     transform: translateX(-50%);
-   
   }
 }
 
-
 @keyframes horscroll {
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
@@ -679,9 +628,7 @@ button[type="submit"] {
   width: 320px;
   height: 210px;
 
-
   transition: 0.5s;
-  
 }
 .certificates img:hover {
   transform: translateY(-5px) scale(1.02);
@@ -745,7 +692,7 @@ button[type="submit"] {
   text-align: center;
   margin-top: 50px;
 }
-.services-box{
+.services-box {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -753,238 +700,261 @@ button[type="submit"] {
   flex-direction: column;
   padding: 5px;
   gap: 20px;
-
 }
-.services h2{
- margin-bottom: 10px;
- border-bottom: 2px solid transparent;
+.services h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, rgb(224, 8, 224) 50%, white) 1;
   border-radius: 5px;
   display: inline-block;
-
-
-
 }
 
-
-
-.service{
+.service {
   background-color: transparent;
   backdrop-filter: blur(2px);
   border-radius: 10px;
   height: 200px;
-  width:300px;
-  padding:5px;
+  width: 300px;
+  padding: 5px;
   box-shadow: 0 0 4px #f7e8e8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition:all 0.5s;
+  transition: all 0.5s;
   text-align: center;
-  
 }
-.services h2{
+.services h2 {
   color: rgb(244, 244, 246);
   text-align: center;
-
-  
 }
-.services h2::first-letter{
-  color:  rgb(234, 80, 234);
+.services h2::first-letter {
+  color: rgb(234, 80, 234);
 }
-.service i{
- margin-bottom: 5px;
- color: grey;
+.service i {
+  margin-bottom: 5px;
+  color: grey;
 }
-.service:hover{
+.service:hover {
   box-shadow: 0 0 10px violet;
   transform: scale(1.1) !important;
   cursor: pointer;
 }
-.service:hover i{
+.service:hover i {
   color: violet;
   text-shadow: 0 0 30px rgb(236, 228, 228);
   background: transparent;
 }
-.sleft{
+.sleft {
   display: none;
 }
-  #skillboxs{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .minibox{
-     border: 2px solid rgba(14, 207, 217, 0.897);
-    padding: 20px;
-    text-align: left;
-    padding-left: 20px;
-    border-radius: 10px;
-    transition: 0.5s !important;
-  }
-  .minibox:hover{
-      
-    transform: scale(1.03) !important;
-    box-shadow: 0 0 10px rgba(14, 207, 217, 0.897);
-  }
-  .stacks{
-      border: 2px solid rgba(14, 207, 217, 0.897);
-    height: 10px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-
-  }
-
-.title_names{
-   padding-left: 10px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-weight: 400;
-   font-style: oblique;
-
+#skillboxs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-#stack-0::before{
-  content:'';
+.minibox {
+  border: 2px solid rgba(14, 207, 217, 0.897);
+  padding: 20px;
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 10px;
+  transition: 0.5s !important;
+}
+.minibox:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 0 10px rgba(14, 207, 217, 0.897);
+}
+.stacks {
+  border: 2px solid rgba(14, 207, 217, 0.897);
+  height: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.title_names {
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: oblique;
+}
+#stack-0::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color:  rgba(14, 207, 217, 0.897);
+  background-color: rgba(14, 207, 217, 0.897);
   width: 90%;
   height: 10px;
-  
-  
-  
 }
-#stack-1::before{
-  content:'';
+#stack-1::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 90%;
   height: 10px;
-  
-  
-  
 }
-#stack-2::before{
-  content:'';
+#stack-2::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-    background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-#stack-3::before{
-  content:'';
+#stack-3::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-    background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-#stack-4::before{
-  content:'';
+#stack-4::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-    background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 80%;
   height: 10px;
-  
-  
-  
 }
-#stack-5::before{
-  content:'';
+#stack-5::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-     background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-#stack-6::before{
-  content:'';
+#stack-6::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-    background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-#stack-7::before{
-  content:'';
+#stack-7::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-    background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-#stack-8::before{
-  content:'';
+#stack-8::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color:  rgba(14, 207, 217, 0.89);
+  background-color: rgba(14, 207, 217, 0.89);
   width: 85%;
   height: 10px;
-  
-  
-  
 }
-  .tech-con{
-    border: 2px solid black;
-    padding:10px;
-       background-color: #322e2e;
-       width: 30%;
-       border-radius: 20px;
-       overflow-x: hidden;
-      white-space:nowrap;
-    
+.tech-con {
+ 
+  padding: 10px;
+ background-color: transparent;
+  width: 30%;
+  border-radius: 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.scrool-left-ani {
+  animation: side-right 5s linear infinite;
+  width: max-content;
+}
+@keyframes side-right {
+  0% {
+    transform: translateX(0%);
   }
-  .scrool-left-ani{
-       animation: side-right 5s linear infinite;
-       width: max-content;
-      
-       
+  100% {
+    transform: translateX(-50%);
   }
-  @keyframes side-right {
-    0%{
-      transform: translateX(0%);
-    }
-    100%{
-      transform: translateX(-50%);
-    }
-    
-  }
-  .detail{
-    border:2px solid gray;
+}
+.detail {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+
+}
+.Projects .pr-para{
+ 
+  color: black;
+  padding: 10px;
+}
+.Projects strong{
+  width: 100%;
+  display: block;
+  
+}
+.prodetails{
+  padding: 1px;
+  text-align: justify; 
+  text-justify: inter-word;
+   line-height: 1.6;
+
+}
+.tech{
+  padding: 10px;
+}
+.tech-name{
+  color: black;
+}
+.project-box{
+  width: 60vw;
+
+  border:4px solid rgb(212, 21, 229);
+  border-radius: 10px 30px;
+  background-color: white;
+  text-align: left;
+
+ overflow: hidden;
+}
+
+.pro-info img{
+ width: 100%;
+ height: 200px;
+}
+.tech-con{
+  width: 100%;
+  background-color: rgba(20, 20, 21, 0.655);
+}
+
+.btn-3{
+    padding: 3px;
     border-radius: 5px;
-    padding: 5px;
-    margin-right: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+     background: linear-gradient(90deg, #ff6b6b, #fbc531);
+     margin-left: 10px;
   }
+
+.con-pro{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
 @media screen and (min-width: 600px) {
+  *{
+    color: white;
+  }
   .menu-icon {
     margin-right: 20px;
     font-size: 2rem;
@@ -1001,7 +971,7 @@ button[type="submit"] {
     width: 100%;
     z-index: 1000;
     transition: 0.5s;
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
   .bg {
     position: relative;
@@ -1031,13 +1001,10 @@ button[type="submit"] {
   }
   #a-info {
     margin-top: 30px;
-   
   }
   .a-info {
     align-content: center;
-    font-size:20px;
-  
-
+    font-size: 20px;
   }
   .a-info p {
     margin-top: 10px;
@@ -1067,9 +1034,8 @@ button[type="submit"] {
   }
   #intro #profile {
     text-align: left;
- 
   }
-  .outer{
+  .outer {
     margin-left: 20px;
   }
   #intro .para {
@@ -1100,27 +1066,50 @@ button[type="submit"] {
   .linkedin {
     text-align: center;
   }
-  .Projects {
-    height: 100vh;
+
+  .pr-info {
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+ 
   }
   .Projects h2 {
     margin-bottom: 0;
   }
+  .con-pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .btn-3{
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to left ,orange,rgb(218, 11, 11));
+  }
+  .Projects{
+    height: auto;
+  }
   .project-box {
     display: flex;
-    width: 70%;
-    margin-left: 14%;
+    width: 45%;
+    height: 300px;
     padding: 10px;
     text-align: center;
     margin-top: 30px;
-   
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 15px;
+        background-color: rgb(12, 12, 12);
     align-items: center;
   }
   .pro-info {
-    align-items: center;
-  
     text-align: center;
-  
   }
   .project-box img {
     width: 150px;
@@ -1129,31 +1118,34 @@ button[type="submit"] {
   #btn3 {
     text-align: center;
     margin-top: 10px;
+    transition: 0.5s;
+  }
+  #btn3:hover{
+    background-position:50% 100%;
+    transform: scale(1.1);
   }
   .project-box strong {
     font-style: normal;
   }
- 
+
   .pr-para {
     padding: 10px;
     line-height: 30px;
-  
-    font-style: italic;
+    white-space: normal;
   }
 
   #Contact-container {
     height: 100vh;
-  
+
     align-items: center;
     align-content: center;
   }
-
 
   .Contact-info {
     margin-top: 70px;
   }
   #Contact-container span {
-   text-transform: lowercase;
+    text-transform: lowercase;
   }
   #change-name {
     display: inline-block;
@@ -1165,6 +1157,12 @@ button[type="submit"] {
   }
   .prodetails {
     display: block;
+
+    padding: 10px;
+    /* behaves like paragraph */
+    white-space: normal; /* allow wrapping */
+    overflow-wrap: break-word; /* wrap long words */
+    word-break: break-word;
   }
   .project-box::after {
     content: "";
@@ -1194,75 +1192,59 @@ button[type="submit"] {
   }
   .project-box:hover:before,
   .project-box:hover:after {
-    width: 60%;
+    width: 70%;
   }
-.project-box:hover .tech-con{
-  background-color: rgb(14, 14, 14);
-}
+  .project-box:hover .tech-con {
+    background-color: rgb(14, 14, 14);
+  }
   .certificates {
     height: 100vh;
     align-content: center;
   }
-  .tech-con{
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
-    border-top: none;
-  border-bottom: none;
-    padding:10px;
-       background-color:transparent;
-       width: 30%;
-       border-radius: 20px;
-       overflow-x: hidden;
-      white-space:nowrap;
-      transition:0.5s;
-      
-    
-    
+  .tech-con {
+    padding: 10px;
+    background-color: transparent;
+    width: 50%;
+    border-radius: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: 0.5s;
   }
-  .scrool-left-ani{
-       animation: side-right 5s linear infinite;
-       width: max-content;
-      
-       
+  .scrool-left-ani {
+    animation: side-right 5s linear infinite;
+    width: max-content;
   }
   @keyframes side-right {
-    0%{
+    0% {
       transform: translateX(0%);
     }
-    100%{
+    100% {
       transform: translateX(-50%);
     }
-    
   }
-  .detail{
-    border:2px solid gray;
+  .detail {
+    border: 2px solid gray;
     border-radius: 5px;
     padding: 5px;
     margin-right: 10px;
   }
-  .tech{
-
-   
-  text-align: left;
-   padding-left: 12px;
+  .tech {
+    text-align: left;
+    padding-left: 12px;
   }
-  .tech .tech-name{
+  .tech .tech-name {
     text-align: left;
   }
-  .tech i{
-
+  .tech i {
     color: red;
     width: 30px;
     height: 30px;
-    
   }
-.services{
-  height: 100vh;
+  .services {
+    height: 100vh;
+  }
 
-}
-
-  .services-box{
-   
+  .services-box {
     display: flex;
     justify-content: space-evenly !important;
     background-color: transparent;
@@ -1270,58 +1252,53 @@ button[type="submit"] {
     padding: 10px;
     gap: 10px;
     place-content: center;
-
-
   }
-  .services h2{
-   margin-bottom:80px;
-   margin-top: 150px;
-   text-align: center;
+  .services h2 {
+    margin-bottom: 80px;
+    margin-top: 150px;
+    text-align: center;
   }
-  .service{
+  .service {
     background-color: transparent;
     backdrop-filter: blue(2px);
     border-radius: 10px;
     height: 200px;
-    width:300px;
-    padding:5px;
+    width: 300px;
+    padding: 5px;
     box-shadow: 0 0 4px #f7e8e8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition:all 0.5s;
-    
+    transition: all 0.5s;
   }
-  .services h2{
+  .services h2 {
     color: rgb(112, 112, 225);
   }
-  .services h2::first-letter{
+  .services h2::first-letter {
     color: white;
   }
-  .service i{
-   margin-bottom: 5px;
-   color: grey;
+  .service i {
+    margin-bottom: 5px;
+    color: grey;
   }
-  .service:hover{
+  .service:hover {
     box-shadow: 0 0 10px violet;
     transform: scale(1.1) !important;
     cursor: pointer;
   }
-  .service:hover i{
+  .service:hover i {
     color: violet;
     text-shadow: 0 0 30px rgb(236, 228, 228);
     background: transparent;
   }
   .skills {
-   height: 100vh;
+    height: 100vh;
     padding: 10px;
     background-repeat: no-repeat;
     background-image: url(skills1.jpg);
     background-size: cover;
-    background-position:center;
-    
- 
+    background-position: center;
   }
   .min-skill {
     display: none;
@@ -1332,25 +1309,21 @@ button[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
-   
-   
   }
   .sleft {
     width: 50%;
     min-height: 100%;
- 
+
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    
+
     align-items: center;
     justify-content: center;
-  
   }
-  .container-skills{
-  
-    height:80%;
+  .container-skills {
+    height: 80%;
   }
   .box h3 {
     text-align: center;
@@ -1364,24 +1337,21 @@ button[type="submit"] {
     width: 40%;
     height: 35%;
     background: rgba(255, 255, 255, 0.779);
-    background-size:150% 150%;
+    background-size: 150% 150%;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s, background 0.3s,all 0.5s;
-   
-   
-
+    transition: transform 0.3s, background 0.3s, all 0.5s;
   }
-  .box:hover{
-     transform: translateY(-10px);
-     transition: 0.5s;
-     box-shadow: 0 0 5px rgb(16, 160, 216);
-     background-color: rgba(255, 255, 255, 0.941);
-     background-position: 100% 100%;
-     cursor: pointer;
-     opacity: 1;
+  .box:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 0 5px rgb(16, 160, 216);
+    background-color: rgba(255, 255, 255, 0.941);
+    background-position: 100% 100%;
+    cursor: pointer;
+    opacity: 1;
   }
   @keyframes smoothChange {
     0% {
@@ -1395,39 +1365,32 @@ button[type="submit"] {
     }
   }
   .skills-info {
-
     background-color: white;
-    width:60%;
+    width: 60%;
     padding: 20px;
-    min-height:90%;
+    min-height: 90%;
     border-radius: 20px;
-    color:black;
+    color: black;
     box-shadow: 0 0 15px #f72585, 0 0 25px #7209b7, 0 0 35px #3a0ca3;
-      
-  
   }
- 
+
   .supp {
-   
     width: 90%;
     height: 100%;
 
     align-items: center;
     display: flex;
     justify-content: center;
-   
   }
 
   .active {
     background-color: rgba(255, 255, 255, 0.954);
     background-position: 100% 100%;
-    transition: 0.5s ;
+    transition: 0.5s;
     transform: translateY(-10px);
     opacity: 1;
   }
-  #s-info{
-    
- 
+  #s-info {
   }
   .skills ul {
     margin-left: 30px;
@@ -1463,12 +1426,9 @@ button[type="submit"] {
     border-bottom: 2px solid violet;
     color: black;
   }
-  #root{
- 
+  #root {
     min-height: 80%;
     padding: 10px;
     color: black;
-  
   }
-
 }
