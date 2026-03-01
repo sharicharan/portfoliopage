@@ -5,10 +5,13 @@
 
   scroll-behavior: smooth;
 }
-html, body {
+
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
+
 #body {
   background:
     radial-gradient(circle at 18% 22%, rgba(168, 85, 247, 0.14), transparent 55%),
@@ -20,7 +23,7 @@ html, body {
   color: white;
   overflow-x: hidden;
   position: relative;
-  
+
 }
 
 #body::before,
@@ -407,12 +410,12 @@ video {
   line-height: 1.8;
   color: #cbd5f5;
   margin-bottom: 18px;
-  text-align: justify;          
-  text-justify: inter-word;    
-  line-height: 1.9;            
-  max-width: 700px;             
-  margin: 0 auto 18px;   
-  padding: 0 20px;       
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto 18px;
+  padding: 0 20px;
 
 }
 
@@ -794,7 +797,23 @@ video {
   background: linear-gradient(135deg, #fb923c, #f97316);
 }
 
+@media (max-width: 600px) {
+  .contact-icon.mail {
+     width: 75px;
+  height: 75px;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
 
+  .mail_wrap span,
+  .mail_wrap a {
+    display: block;
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+  }
+}
 .card-info {
   position: relative;
   z-index: 2;
@@ -827,11 +846,7 @@ video {
 }
 
 
-@media (max-width: 600px) {
-  .contact-card {
-    width: 100%;
-  }
-}
+
 
 #intro .linkedin {
   background: #0077b5;
@@ -897,7 +912,7 @@ h2 {
   padding: 30px;
   border-radius: 14px;
   z-index: 9999;
-  width:90%;
+  width: 90%;
   backdrop-filter: blur(14px);
   opacity: 0;
   visibility: hidden;
@@ -917,7 +932,7 @@ h2 {
 
 textarea {
   border: 2px solid rgba(255, 255, 255, 0.55);
-  ;
+    color: white;
   margin-top: 30px;
   padding: 10px;
   border-radius: 10px;
@@ -933,6 +948,8 @@ textarea {
   transform: translate(-50%, -50%) scale(1);
 
 }
+
+
 
 .pop-box h3 {
   background-image: linear-gradient(270deg, #3f5efb, #fc466b);
@@ -958,6 +975,7 @@ input[type="email"] {
   margin-bottom: 20px;
   outline: none;
   border-bottom: 1px solid white;
+  color: white;
 }
 
 #message,
@@ -1154,6 +1172,7 @@ button[type="submit"]:active:before {
 .scrolls:hover {
   animation-play-state: paused;
 }
+
 .certificates,
 .firstrow {
   overflow-x: hidden;
@@ -1293,7 +1312,7 @@ button[type="submit"]:active:before {
 .min-skill {
   text-align: center;
   padding: 10px;
- width: 100%;
+  width: 100%;
 
 }
 
@@ -2109,6 +2128,10 @@ body {
     100% {
       background-position: 0% 0%;
     }
+  }
+
+  .pop-box {
+    width: 50%;
   }
 
   .skills-info {
