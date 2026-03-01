@@ -1,8 +1,9 @@
+
 var data = {
   en: {
     helo: "HELLO I Am",
-    Name: "port",
-    name2: "Folio",
+    Name: "Hari",
+    name2: "Charan",
     home: "Home",
     about: "About",
     pro: "Projects",
@@ -12,75 +13,70 @@ var data = {
     btn1: "Hire me",
     btn2: "Resume",
     ainfo: "About",
-    ser: "Myservices",
+    ser: "My services",
     paragraph:
       "Hello! I'm Hari Charan, a passionate Computer Science and Engineering student currently pursuing my B.Tech, set to graduate in 2027. With a solid foundation from my diploma and a growing expertise in web development and Python programming, I am committed to leveraging technology to create innovative solutions.",
     Contactinfo: "Contact me",
     Mno: "Mobile",
     front: "Front end",
     back: "Back end",
-    web:"Web Development",
-    fixbug:"Bug Fixing",
-    python:"Python Development",
+    web: "Web Development",
+    fixbug: "Bug Fixing",
+    python: "Python Development",
     ui: "uiux",
     to: "tools",
     Mail: "Mail",
-    skill: "Skills",
+    skill: "Tech Stack",
     project: "Projects",
     button: "Check",
     cer: "Certificates",
     nameofproject1: "Basic Attendance Calculator Webpage:",
     nameofproject2: "Blood Donation Webpage:",
-    nameofproject3:"Nihon Indo Foods",
-    nameofproject4:"ReelSpot",
-    disofproject1:
-      "Input total classes and attended classes, calculate attendance percentage, and display results with simple formatting.",
-    disofproject2:
-      "A platform for donors and recipients to connect, featuring blood type search, registration forms, and donor eligibility guidelines.",
-      disofproject3:"A restaurant food ordering website that enables customers to place orders online easily and conveniently, without the need to interact with staff",
-      disofproject4:"A responsive web page that showcases trending and top-rated movies by fetching data from an IMDb-compatible API. Features include search, ratings, posters, and pagination for smooth browsingbuild a webpage that shows trending and top rated movies, api initgrated (imdb)",
-      
+    nameofproject3: "Nihon Indo Foods",
+    nameofproject4: "ReelSpot",
+    info_para1: " A passionate Computer Science and Engineering student focused on designing modern and scalable web applications",
+    info_para2: "I enjoy crafting clean user interfaces, writing efficient code, and transforming ideas into real-world digital solutions",
+    info_para3: "Currently working toward becoming a full-stack developer with strong expertise in JavaScript, Python, and modern frameworks",
+
+
   },
   ja: {
-    helo: "こんにちは 私は",
-    Name: "ポート",
-    name2: "フォリオ",
-    home: "家",
-    about: "について",
+    helo: "こんにちは、私は",
+    Name: "ハリ",
+    name2: "チャラン",
+    home: "ホーム",
+    about: "プロフィール",
+    ainfo: "プロフィール",
     pro: "プロジェクト",
     ski: "スキル",
     con: "お問い合わせ",
-    fullname: "ハリ・チャランです。",
-    btn1: "私を雇ってください",
-    btn2: "再開する",
-    ainfo: "について",
+    fullname: "ハリ・チャラン",
+    btn1: "お問い合わせ",
+    btn2: "履歴書",
+    Contactinfo: "連絡先",
     ser: "私のサービス",
     cer: "証明書",
     front: "フロントエンド",
     back: "バックエンド",
-    ui: "うい、う",
+    ui: "UI・UX",
     to: "ツール",
-     web:"ウェブ開発",
-    fixbug:"バグ修正",
-    python:"Python 開発",
+    web: "ウェブ開発",
+    fixbug: "バグ修正",
+    python: "Python 開発",
     paragraph:
-      "こんにちは！私は Hari Charan です。コンピューター サイエンスとエンジニアリングに熱心に取り組んでいる学生で、現在は B.Tech を取得して 2027 年に卒業する予定です。学位で得た確固たる基礎と、Web 開発と Python プログラミングの専門知識を活かして、テクノロジーを活用して革新的なソリューションを生み出すことに尽力しています。",
-    Contactinfo: "連絡してください",
+      "こんにちは。私はハリ・チャランです。現在、2027年卒業予定のコンピューターサイエンスおよびエンジニアリングを専攻するB.Techの学生です。Web開発やPythonプログラミングに取り組み、技術を活用して実用的で革新的なソリューションを開発することに情熱を持っています。",
     Mno: "携帯",
-    Mail: "郵便",
-    skill: "スキル",
+    Mail: "メール",
+    skill: "技術スタック",
     project: "プロジェクト",
-    button: "チェック",
+    button: "詳細を見る",
     nameofproject1: "基本的な出席計算ウェブページ:",
     nameofproject2: "献血ウェブページ:",
-    nameofproject3:"日本インドフーズ",
-    nameofproject4:"リールスポット",
-    disofproject1:
-      "総クラス数と出席クラス数を入力し、出席率を計算し、結果を簡単なフォーマットで表示します。",
-    disofproject2:
-      "血液型の検索、登録フォーム、ドナー資格ガイドラインを備えた、ドナーと受信者をつなぐプラットフォームです。",
-    disofproject3:"スタッフとやり取りすることなく、顧客がオンラインで簡単かつ便利に注文できるレストランの食品注文ウェブサイト",
-    disofproject4:"IMDb互換APIからデータを取得し、人気映画や評価の高い映画を紹介するレスポンシブなウェブページです。検索、評価、ポスター、ページネーションなどの機能により、スムーズな閲覧が可能です。",
+    nameofproject3: "日本インドフーズ",
+    nameofproject4: "リールスポット",
+    info_para1: " モダンでスケーラブルなWebアプリケーションの設計に重点を置いた、熱心なコンピュータサイエンスとエンジニアリングの学生",
+    info_para2: "私は、きれいなユーザーインターフェースを作り、効率的なコードを書いて、アイデアを現実世界のデジタルソリューションに変換することを楽しんでいます。",
+    info_para3: "現在、JavaScript、Python、最新のフレームワークに精通したフルスタック開発者を目指しています。"
   },
 };
 
@@ -93,7 +89,7 @@ function changelan() {
     { key: "home", selectors: [".home", "#h-small"] },
     { key: "pro", selectors: [".pro", "#p-small", ".pro-heading"] },
     { key: "con", selectors: [".con", "#c-small"] },
-    { key: "fullname", selectors: ["#fullname"] },
+    { key: "fullname", selectors: ["#fullname", ".cn"] },
     { key: "btn1", selectors: ["#btn1"] },
     { key: "btn2", selectors: ["#btn2"] },
     { key: "Name", selectors: ["#Name"] },
@@ -108,14 +104,11 @@ function changelan() {
     { key: "project", selectors: ["#pro-infos"] },
     { key: "nameofproject1", selectors: ["#nameofpro1"] },
     { key: "nameofproject2", selectors: ["#nameofpro2"] },
-      { key: "nameofproject3", selectors: ["#nameofpro3"] },
+    { key: "nameofproject3", selectors: ["#nameofpro3"] },
     { key: "nameofproject4", selectors: ["#nameofpro4"] },
-    { key: "disofproject1", selectors: ["#disofpro1"] },
-    { key: "disofproject2", selectors: ["#disofpro2"] },
-        { key: "disofproject3", selectors: ["#disofpro3"] },
-    { key: "disofproject4", selectors: ["#disofpro4"] },
+
     { key: "button", selectors: [".check1", ".check2"] },
-    { key: "ser", selectors: [".service-heading"] },
+    { key: "ser", selectors: ["#service-heading"] },
     { key: "cer", selectors: [".cer-headings"] },
     { key: "front", selectors: ["#front-heading"] },
     { key: "back", selectors: ["#back-heading"] },
@@ -124,6 +117,10 @@ function changelan() {
     { key: "web", selectors: [".ser-web"] },
     { key: "fixbug", selectors: [".ser-Bugfixing"] },
     { key: "python", selectors: [".ser-python"] },
+    { key: "info_para1", selectors: ["#info-para1"] },
+    { key: "info_para2", selectors: ["#info-para2"] },
+    { key: "info_para3", selectors: ["#info-para3"] },
+
   ];
 
   const currentLangData = lang === "en" ? data.ja : data.en;
@@ -146,7 +143,7 @@ document.getElementById("load-small").addEventListener("click", changelan);
 document.getElementById("menu-icon").addEventListener("click", () => {
   const menu = document.getElementById("menu-small");
   menu.classList.toggle("show-style")
- 
+
 });
 
 document.querySelector("#btn2").addEventListener("click", () => {
@@ -158,45 +155,28 @@ document.querySelector("#btn2").addEventListener("click", () => {
   document.body.removeChild(link);
 });
 document.querySelector(".close-btn").addEventListener("click", () => {
-  document.querySelector(".pop-box").style.display = "none";
+  document.querySelector(".pop-box").classList.remove("pop-box_show");
 });
 document.getElementById("number").innerHTML = "7901439616";
 
 document.querySelector("#btn1").addEventListener("click", () => {
-  document.querySelector(".pop-box").style.display = "block";
+let box = document.getElementById("Contact-box");
+  box.classList.toggle("pop-box_show");
 });
-document.querySelector(".send-btn").addEventListener("click", (event) => {
-  event.preventDefault();
-  const info = document.querySelector(".name-in").value;
-  if (
-    info != "" &&
-    document.querySelector(".email-in").value.slice(-10) === "@gmail.com"
-  ) {
-    document.querySelector(".pop-box").style.display = "none";
-    document.querySelector(".popup").style.display = "block";
-  } else {
-    alert("Enter valid information");
-  }
-});
+
 document.querySelector(".close-btn2").addEventListener("click", () => {
   document.querySelector(".popup").style.display = "none";
 });
 
 document.getElementById("con").addEventListener("click", () => {
   let box = document.getElementById("Contact-box");
-  if (box.style.display == "none") {
-    box.style.display = "block";
-  } else {
-    box.style.display = "none";
-  }
+  box.classList.toggle("pop-box_show");
 });
 document.getElementById("emailbox").addEventListener("click", () => {
   let box = document.getElementById("Contact-box");
-  if (box.style.display == "none") {
-    box.style.display = "block";
-  } else {
-    box.style.display = "none";
-  }
+  box.classList.add("pop-box_show");
+
+
 });
 let scores = [95, 90, 75, 70, 80, 70, 80];
 let elements = document.querySelectorAll(".percentage");
@@ -204,25 +184,25 @@ let elements = document.querySelectorAll(".percentage");
 elements.forEach((element, index) => {
   element.innerText = scores[index];
 });
- let names = ["programmer", "webdeveloper"];
-  let i = 0;
-  let changen = document.getElementById("change-name");
+let names = ["programmer", "webdeveloper"];
+let i = 0;
+let changen = document.getElementById("change-name");
 
-  function changeName() {
-    changen.style.opacity = 0;
-    setTimeout(() => {
-      changen.textContent = names[i];
-      changen.style.opacity = 1;
-      i = (i + 1) % names.length;
-    }, 1000);
-  }
-
-  
-  changen.textContent = names[i];
-  i++;
+function changeName() {
+  changen.style.opacity = 0;
+  setTimeout(() => {
+    changen.textContent = names[i];
+    changen.style.opacity = 1;
+    i = (i + 1) % names.length;
+  }, 1000);
+}
 
 
-  setInterval(changeName, 5000);
+changen.textContent = names[i];
+i++;
+
+
+setInterval(changeName, 5000);
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -232,17 +212,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  change_data("frontend");
-
-  const shift = document.querySelectorAll(".box");
-  shift.forEach((element) =>
-    element.addEventListener("click", function (e) {
-      shift.forEach((ele) => ele.classList.remove("active"));
-      element.classList.add("active");
-    })
-  );
-});
 function change_data(serv) {
   let container = document.getElementById("skills-info");
   container.classList.remove("show");
@@ -275,7 +244,7 @@ function change_data(serv) {
         ],
       },
       uiux: {
-        title: ["UI-UX", "うい、う"],
+        title: ["UI-UX", "UI-UX"],
         skills: ["Framer", "Figma", "others"],
         poster: [
           "devicon-javascript-plain colored",
@@ -315,6 +284,17 @@ function change_data(serv) {
     container.classList.add("show");
   }, 500);
 }
+document.addEventListener("DOMContentLoaded", function () {
+  change_data("frontend");
+
+  const shift = document.querySelectorAll(".box");
+  shift.forEach((element) =>
+    element.addEventListener("click", function (e) {
+      shift.forEach((ele) => ele.classList.remove("active"));
+      element.classList.add("active");
+    })
+  );
+});
 const skillstForDevice = [
   "html",
   "css",
@@ -343,20 +323,68 @@ skillstForDevice.forEach((ele, index) => {
 
   document.getElementById("skillboxs").appendChild(diver);
 });
-function expand(e){
-  if (e.innerText =="see more"){
+function expand(e) {
+  if (e.innerText == "see more") {
     let sibling = e.previousElementSibling;
-    
-   sibling.style.height = "auto";
-   e.innerText="see Less"
+
+    sibling.style.height = "auto";
+    e.innerText = "see Less"
   }
-   else{
-     let sibling = e.previousElementSibling;
-    
-   sibling.style.height = 85 +"px";
-   e.innerText="see more"
+  else {
+    let sibling = e.previousElementSibling;
+
+    sibling.style.height = 85 + "px";
+    e.innerText = "see more"
   }
-  
-   
+
+
 
 }
+
+let nav_ele = document.querySelectorAll("#menu li a");
+
+nav_ele.forEach(link => {
+  link.addEventListener("click", () => {
+
+    nav_ele.forEach(item => {
+      item.classList.remove("active");
+    });
+
+    link.classList.add("active");
+  });
+});
+(function () {
+  emailjs.init("Khzr1v7EoSeZDd1mc");
+})();
+
+const form = document.getElementById("contact-form");
+const sendBtn = document.getElementById("sendBtn");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (sendBtn.classList.contains("loading")) return;
+  sendBtn.classList.add("loading");
+  const params = {
+    name: document.getElementById("user_name").value,
+    email: document.getElementById("user_email").value,
+    message: document.getElementById("user_message").value,
+  };
+  emailjs
+    .send("service_z15blyb", "template_j4rzfji", params)
+    .then(() => {
+      sendBtn.classList.remove("loading");
+      form.reset();
+      document.querySelector(".pop-box").classList.remove("pop-box_show");
+
+      document.getElementById("successPopup").classList.add("show");
+    })
+    .catch((error) => {
+      console.error(error);
+      sendBtn.classList.remove("loading");
+
+      alert("Failed to send message");
+    });
+});
+document.querySelector(".close-btn2").addEventListener("click", () => {
+  document.getElementById("successPopup").classList.remove("show");
+});
