@@ -5,7 +5,10 @@
 
   scroll-behavior: smooth;
 }
-
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 #body {
   background:
     radial-gradient(circle at 18% 22%, rgba(168, 85, 247, 0.14), transparent 55%),
@@ -17,6 +20,7 @@
   color: white;
   overflow-x: hidden;
   position: relative;
+  
 }
 
 #body::before,
@@ -407,7 +411,8 @@ video {
   text-justify: inter-word;    
   line-height: 1.9;            
   max-width: 700px;             
-  margin: 0 auto 18px;         
+  margin: 0 auto 18px;   
+  padding: 0 20px;       
 
 }
 
